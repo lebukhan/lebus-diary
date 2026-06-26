@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>অফলাইন · লেবুর ডায়েরি</title>
+<style>
+  body{margin:0;min-height:100vh;display:grid;place-items:center;background:linear-gradient(160deg,#2a1a0e,#4a2c16);
+       color:#f0dcb4;font-family:system-ui,'Noto Serif Bengali',serif;text-align:center;padding:24px}
+  h1{font-size:24px;margin:0 0 10px}
+  p{color:#c9a877;max-width:320px;line-height:1.7}
+</style>
+</head>
+<body>
+  <div>
+    <h1>লেবুর ডায়েরি</h1>
+    <p>এই পৃষ্ঠাটি এখনো ক্যাশে সংরক্ষিত হয়নি। একবার অনলাইনে অ্যাপটি খুললে এরপর সম্পূর্ণ অফলাইনেই চলবে।</p>
+  </div>
+</body>
+</html>

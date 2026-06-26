@@ -1,0 +1,26 @@
+import "./globals.css";
+import { Noto_Serif_Bengali, Hind_Siliguri, Galada } from "next/font/google";
+import Providers from "./providers";
+
+const book = Noto_Serif_Bengali({ subsets: ["bengali", "latin"], weight: ["400", "500", "600", "700"], variable: "--font-book", display: "swap" });
+const modern = Hind_Siliguri({ subsets: ["bengali", "latin"], weight: ["300", "400", "500", "600", "700"], variable: "--font-modern", display: "swap" });
+const hand = Galada({ subsets: ["bengali", "latin"], weight: ["400"], variable: "--font-hand", display: "swap" });
+
+export const metadata = {
+  title: "লেবুর ডায়েরি",
+  description: "প্রিমিয়াম অফলাইন বাংলা ডায়েরি — আপনার একান্ত পাতা।",
+  manifest: "/manifest.webmanifest",
+  appleWebApp: { capable: true, title: "লেবুর ডায়েরি", statusBarStyle: "black-translucent" },
+  icons: { icon: "/favicon.ico", apple: "/icons/apple-touch-icon.png" },
+};
+export const viewport = { themeColor: "#5a2f1a", width: "device-width", initialScale: 1, maximumScale: 1, userScalable: false };
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="bn" data-theme="light" className={`${book.variable} ${modern.variable} ${hand.variable}`}>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
+    </html>
+  );
+}
